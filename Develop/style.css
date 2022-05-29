@@ -1,5 +1,5 @@
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -18,33 +18,48 @@ textarea {
   background-color: transparent;
   color: black;
   border-radius: 0;
-  /* border-bottom: 10px solid black; */
+  padding: 2em 0 0 0;
 }
 
-.description {
-  white-space: pre-wrap;
+.display-3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.taskItem {
+  border: none;
 }
 
 .time-block {
   text-align: center;
   border-radius: 15px;
+  padding-bottom: 3em;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
 }
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-bottom: 1px dashed #000000;
+  color: black;
+}
+
+.hourName,
+.taskItem {
+  border-bottom: 1px solid #000000;
+}
+
+.hourName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: #00000069;
 }
 
 .present {
@@ -53,25 +68,22 @@ textarea {
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #ddbc27;
   color: white;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: whitesmoke;
-  color: black;
+  border: 1px solid rgb(91, 91, 91);
+  background-color: black;
+  color: white;
 }
 
 .saveBtn:hover {
-  background-color: black;
+  border: 3px solid #ff6961;
   color: white;
   transition: all 0.1s ease-in-out;
 }
 
-/* .saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-} */
+::placeholder {
+  color: whitesmoke;
+}

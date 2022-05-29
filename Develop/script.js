@@ -9,6 +9,7 @@ $("#currentDay").text(currentTime);
 // save button function
 saveBtn.on('click', function (event) {
     event.preventDefault();
+    //sibling because same level as input
     let val = $(this).siblings('.taskItem').val();
     let key = $(this).siblings('.taskItem').data('hour');
 
@@ -59,17 +60,3 @@ function onLoad() {
 
 // run this function on page load/reload
 onLoad();
-
-
-
-
-// for(let i = 0; i < 2; i++) {
-//     let data = localStorage.getItem(i);
-//     if(inputEl == i) {
-//         // console.log(i);
-//     }
-// }
-// let eightHourEl = $('#eight');
-// if(data) {
-//     eightHourEl.find('input[name="taskItem"]').val(data);
-// };
